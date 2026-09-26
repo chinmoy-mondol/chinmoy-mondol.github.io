@@ -2,6 +2,7 @@
 permalink: /
 title: "About Me"
 seo_title: "Chinmoy Mondol"
+description: "Prospective PhD Student (Fall 2027) in Computer Vision, Multimodal AI, and Agentic AI"
 author_profile: true
 redirect_from: 
   - /about/

@@ -118,11 +118,11 @@
 <!-- Open Graph protocol data (https://ogp.me/), used by social media -->
 <meta property="og:locale" content="{{ site.locale | default: "en" }}">
 <meta property="og:site_name" content="{{ site.title }}"> 
-<meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+<meta property="og:title" content="{{ page.seo_title | default: page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 {% if page.date %}
   <meta property="og:type" content="article">
 {% endif %}
-{% if page.excerpt %}
+{% if page.description or page.excerpt %}
   <meta property="og:description" name="description" content="{{ seo_description }}">
 {% elsif site.og_description %}
   <meta property="og:description" name="description" content="{{ site.og_description }}">
@@ -146,5 +146,10 @@
   <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
 {% elsif page.header.overlay_image %}
   <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+{% else %}
+  {% comment %} Link previews (WhatsApp, LinkedIn, etc.): fall back to a small copy of the sidebar headshot. {% endcomment %}
+  <meta property="og:image" content="{{ base_path }}/images/ChinmoyMondol-share.jpg">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
 {% endif %}
 <!-- end Open Graph protocol -->
