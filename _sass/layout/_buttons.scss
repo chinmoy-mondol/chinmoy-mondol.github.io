@@ -153,3 +153,9 @@
     font-size: $type-size-7;
   }
 }
+
+/* CV download button, shared between the header nav and footer */
+
+.btn--cv {
+  text-transform: none !important;
+}

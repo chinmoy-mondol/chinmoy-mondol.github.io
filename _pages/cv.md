@@ -9,56 +9,61 @@ redirect_from:
 
 {% include base_path %}
 
+<a href="{{ base_path }}/files/CV_Chinmoy_Mondol.pdf" class="btn btn--primary">Download CV (PDF)</a>
+
+Research Interests
+======
+Computer vision and multimodal learning, with a focus on real-time perception for embedded and robotic systems. Current work spans vision-transformer optimization for edge deployment, multimodal context understanding, and RAG-based conversational evaluation.
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **BSc in Computer Science and Engineering**, American International University-Bangladesh, Dhaka, Bangladesh (Sept 2017 – April 2021)
+  * CGPA: 3.99/4.00
+  * Thesis: *Music Suggestions from Determining the Atmosphere of Images* (Supervisor: Md Kishor Morol)
 
-Work experience
+Research Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Research Assistant (Remote)**, ELITE Research Lab, Queens, NY, USA (Sept 2026 – Present). Supervisor: Abir Bokhtiar
+  * Collaborate with a 4-member research team to scope a novel research project in agentic AI and multi-agent systems, exploring intersections with computer vision and quantum computing.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Professional Experience
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Assistant Lead Engineer (QA)**, [bKash Limited](https://www.bkash.com/en), Dhaka, Bangladesh (Sept 2025 – Present)
+  * Evaluate RAG-based conversational systems for a fintech assistant, building multi-dialect (Bangla/Banglish/English) test suites to stress-test retrieval and dialogue accuracy, and validating ASR/TTS pipelines for accent and financial-term precision.
+* **Software Engineer (QA) → Senior Software Engineer (QA)**, [Tiger IT Bangladesh Limited](https://www.tigerit.com), Dhaka, Bangladesh (Jul 2021 – Sept 2025)
+  * Validated a real-time vehicle number plate recognition system, focusing on inter-service communication and Deep SORT integration.
+  * Collaborated with DevOps teams on containerized deployments, gaining hands-on exposure to Docker-based environments and deployment workflows.
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+Teaching Experience
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+* **Teaching Assistant**, American International University-Bangladesh (Fall 2021)
+  * Served as a TA for *Artificial Intelligence and Expert System (CSC4121)* and *Web Technologies (CSC3222)*, assisting 12 lab sessions each and supporting 70+ undergraduate students.
+  * Designed programming assignments on search strategies, adversarial search, and genetic algorithms (AI), and tokenization and MVC architecture (Web Technologies).
+  * Assisted faculty with grading assignments and final projects.
+
+Skills
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+* **Research:** Data Analysis, Literature Review, Academic Writing
+* **Programming Languages:** Python, C, C++, Java
+* **Machine Learning:** TensorFlow, Keras, scikit-learn, OpenCV, NumPy, Pandas, Jupyter Notebook, Kaggle
+* **Databases:** SQL (MySQL, PostgreSQL), NoSQL (Redis)
+* **Systems & Infrastructure:** Docker, Git
+* **Writing Tools:** LaTeX
+
+Awards & Honors
 ======
-* Currently signed in to 43 different slack teams
+* **Gold Medal** at the convocation ceremony for outstanding academic performance, AIUB (2021)
+* Graduated **Summa Cum Laude**, AIUB (2021)
+* **Dean's List Honors** (four times), AIUB (2017 – 2021)
+* **Merit-Based Academic Scholarship** (Tuition Fee Waiver), AIUB (2017 – 2021)
+* **1st Prize**, Inter-University ICT Olympiad, AIUB CS Fest (2018)
+
+References
+======
+Available on request.

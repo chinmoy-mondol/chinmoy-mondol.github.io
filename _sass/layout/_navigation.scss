@@ -162,8 +162,8 @@
 .page__meta + .pagination,
 .page__share + .pagination,
 .page__comments + .pagination {
-  margin-top: 2em;
-  padding-top: 2em;
+  margin-top: 1em;
+  padding-top: 1em;
   border-top: 1px solid var(--global-border-color);
 }
 
@@ -230,7 +230,17 @@
         width: 25px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        min-height: 2.625rem; /* same height as the text tabs so the hover underline sits at the same level */
         cursor: pointer;
+      }
+    }
+
+    /* phone widths: only the name and the theme toggle are visible, so pull the toggle up beside the name.
+       Shifted visually only (layout widths untouched) so the nav script's fit calculation stays the same. */
+    @media (max-width: 430px) {
+      #theme-toggle a {
+        left: -3rem;
       }
     }
 

@@ -1,6 +1,44 @@
 {% include base_path %}
 
-{% if page.previous or page.next %}
+{% if page.collection == 'publications' %}
+  {% comment %} Follows the display order on /publications/ (grouped by category, newest first within each), not the collection's default doc order. {% endcomment %}
+  {% assign pub_order = "/publication/2025-langchain-image-conversational-ai,/publication/2021-music-suggestions-image-atmosphere,/publication/2026-pose-estimation-collaborative-robotics" | split: "," %}
+  {% assign current_index = -1 %}
+  {% for pub_url in pub_order %}
+    {% if pub_url == page.url %}
+      {% assign current_index = forloop.index0 %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign prev_url = "" %}
+  {% assign next_url = "" %}
+  {% if current_index > 0 %}
+    {% assign prev_index = current_index | minus: 1 %}
+    {% assign prev_url = pub_order[prev_index] %}
+  {% endif %}
+  {% assign next_index = current_index | plus: 1 %}
+  {% if next_index < pub_order.size %}
+    {% assign next_url = pub_order[next_index] %}
+  {% endif %}
+
+  {% assign prev_doc = site.publications | where: "url", prev_url | first %}
+  {% assign next_doc = site.publications | where: "url", next_url | first %}
+
+  {% if prev_doc or next_doc %}
+    <nav class="pagination">
+      {% if prev_doc %}
+        <a href="{{ base_path }}{{ prev_doc.url }}" class="pagination--pager" title="{{ prev_doc.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+      {% else %}
+        <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+      {% endif %}
+      {% if next_doc %}
+        <a href="{{ base_path }}{{ next_doc.url }}" class="pagination--pager" title="{{ next_doc.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      {% else %}
+        <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      {% endif %}
+    </nav>
+  {% endif %}
+{% elsif page.previous or page.next %}
   <nav class="pagination">
     {% if page.previous %}
       <a href="{{ base_path }}{{ page.previous.url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
