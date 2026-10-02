@@ -6,7 +6,7 @@ permalink: /publication/2021-music-suggestions-image-atmosphere
 excerpt: 'Undergraduate thesis work.'
 date: 2021-12-18
 venue: '2021 24th International Conference on Computer and Information Technology (ICCIT), Dhaka, Bangladesh'
-citation: 'Sohel, S. I., <b>Mondol, C.</b>, Ayon, H. S., Islam, U. T., &amp; Morol, M. K. (2021). &quot;Music Suggestions from Determining the Atmosphere of Images.&quot; <i>2021 24th International Conference on Computer and Information Technology (ICCIT)</i>, Dhaka, Bangladesh, pp. 1–7.'
+citation: 'S. I. Sohel, <b>C. Mondol</b>, H. S. Ayon, U. T. Islam, and M. K. Morol, &quot;Music Suggestions from Determining the Atmosphere of Images,&quot; <i>2021 24th International Conference on Computer and Information Technology (ICCIT)</i>, Dhaka, Bangladesh, 2021, pp. 1–7.'
 ---
 
 DOI: [10.1109/ICCIT54785.2021.9689781](https://doi.org/10.1109/ICCIT54785.2021.9689781)

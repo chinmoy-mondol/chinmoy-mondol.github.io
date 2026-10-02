@@ -6,7 +6,7 @@ permalink: /publication/2025-langchain-image-conversational-ai
 excerpt: ''
 date: 2025-01-01
 venue: '2025 IEEE International Conference on Emerging Technologies and Applications (MPSec ICETA), Gwalior, India'
-citation: 'Nuhel, A. K., Taha, A. S., Ibrahim, M., Oishy, M. I., <b>Mondol, C.</b>, &amp; Sifat, M. T. I. (2025). &quot;Integrating Visual Data in Conversational AI: A Study on LangChain Custom Tools for Image-Based Interaction.&quot; <i>2025 IEEE International Conference on Emerging Technologies and Applications (MPSec ICETA)</i>, Gwalior, India, pp. 1–6.'
+citation: 'A. K. Nuhel, A. S. Taha, M. Ibrahim, M. I. Oishy, <b>C. Mondol</b>, et al., &quot;Integrating Visual Data in Conversational AI: A Study on LangChain Custom Tools for Image-Based Interaction,&quot; <i>2025 IEEE International Conference on Emerging Technologies and Applications (MPSec ICETA)</i>, Gwalior, India, 2025, pp. 1–6.'
 ---
 
 DOI: [10.1109/MPSecICETA64837.2025.11118796](https://doi.org/10.1109/MPSecICETA64837.2025.11118796)
