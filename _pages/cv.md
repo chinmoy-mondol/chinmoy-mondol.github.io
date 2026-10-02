@@ -13,7 +13,7 @@ redirect_from:
 
 Research Interests
 ======
-Computer vision and multimodal learning, with a focus on real-time perception for embedded and robotic systems. Current work spans vision-transformer optimization for edge deployment, multimodal context understanding, and RAG-based conversational evaluation.
+Computer vision, multimodal AI, and agentic AI, with a growing interest in efficient perception for real-world systems. Recent work spans vision-transformer optimization for edge deployment, multimodal context understanding, and RAG-based conversational evaluation.
 
 Education
 ======
