@@ -24,7 +24,9 @@ Education
 Research Experience
 ======
 * **Research Assistant (Remote)**, ELITE Research Lab, Queens, NY, USA (Sept 2026 – Present). Supervisor: Abir Bokhtiar
-  * Collaborate with a 4-member research team to scope a novel research project in agentic AI and multi-agent systems, exploring intersections with computer vision and quantum computing.
+  * Build an open Landsat/Sentinel benchmark (1988–2026) for forecasting riverbank erosion on Bangladesh's Jamuna and Padma rivers, with three forecasting tasks and baselines from persistence to a geospatial foundation model.
+  * Develop IndicTextBench, a benchmark for visual text rendering in Bengali, Devanagari, and Tamil, evaluating text-to-image diffusion models with OCR, grapheme-cluster error rates, and a native-reader validation study.
+  * Contribute to a vulnerability assessment of medical multimodal LLMs, extending an adversarial text-image evaluation framework toward 2,500+ clinical cases.
 
 Professional Experience
 ======

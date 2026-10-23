@@ -2,7 +2,8 @@
 
 {% if page.collection == 'publications' %}
   {% comment %} Follows the display order on /publications/ (grouped by category, newest first within each), not the collection's default doc order. {% endcomment %}
-  {% assign pub_order = "/publication/2025-langchain-image-conversational-ai,/publication/2021-music-suggestions-image-atmosphere,/publication/2026-pose-estimation-collaborative-robotics" | split: "," %}
+  {% capture pub_order_csv %}{% for category in site.publication_category %}{% for post in site.publications reversed %}{% if post.category == category[0] %}{{ post.url }},{% endif %}{% endfor %}{% endfor %}{% endcapture %}
+  {% assign pub_order = pub_order_csv | split: "," %}
   {% assign current_index = -1 %}
   {% for pub_url in pub_order %}
     {% if pub_url == page.url %}

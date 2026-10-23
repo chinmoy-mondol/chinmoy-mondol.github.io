@@ -88,6 +88,8 @@ publication_category:
     title: 'Conference Papers'
   manuscripts:
     title: 'Journal Articles'
+  submitted:
+    title: 'Submitted Manuscripts'
   in_preparation:
     title: 'Manuscripts in Preparation'
 
